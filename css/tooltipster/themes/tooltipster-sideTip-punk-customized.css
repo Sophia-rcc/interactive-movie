@@ -1,0 +1,32 @@
+/* custom secondary theme on top of tooltipster-punk: */
+
+.tooltipster-sidetip.tooltipster-punk .tooltipster-box {
+    background: green;
+    border: none;
+    border-bottom: 4px solid red;
+    border-radius: 6px;
+    box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.tooltipster-sidetip.tooltipster-punk .tooltipster-content {
+    color: white;
+    padding: 0.3em;
+    font-size: 1.6em;
+    font-family:  'Roboto Condensed', sans-serif;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom .tooltipster-arrow-border {
+    border-bottom-color: red;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-left .tooltipster-arrow-border {
+    border-left-color: red;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-right .tooltipster-arrow-border {
+    border-right-color: red;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-top. .tooltipster-arrow-border {
+    border-top-color: red;  /*#f71169*/
+}

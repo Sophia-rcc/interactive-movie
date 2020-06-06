@@ -1,0 +1,98 @@
+<html>
+
+<head>
+	<title>Karl May</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<script src="js/jquery-3.3.1.min.js" language="javascript" type="text/javascript"></script>
+
+	<script type="text/javascript" src="js/interaction.js"></script>
+	<script src="js/tooltipster/tooltipster.bundle.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/hotspots.css">
+	<link rel="stylesheet" type="text/css" href="css/tooltipster/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltipster/themes/tooltipster-sideTip-shadow.min.css" />
+
+	<script>
+		$(document).ready(function() {
+            $('.tooltip').tooltipster({
+                theme: 'tooltipster-shadow'
+            })
+        });
+    </script>
+</head>
+
+<body>
+	
+		<div id="videoArea">
+			<!--Hotspot für Videobeginn-->
+			<div><img id="begin" src="img/beginn_w.svg"></div>
+			
+			<!--Buttons für Buch-->
+			<div id="start" class="hs book tooltip" title="Beginne die Story"><img class="book" src="img/start_w.svg" /></div>
+			<div id="prev" class="hs tooltip" title="Vorherige Seite"><img class="book" src="img/zurueck_w.svg" /></div>
+			<div id="next" class="hs tooltip" title="Nächste Seite"><img class="book" src="img/weiter_w.svg" /></div>
+			
+			<div id="restart" class="hs book tooltip" title="Neustart"><img class="book" src="img/start_w.svg" /></div>
+			<div id="end" class="hs tooltip" title="Beenden"><img class="book" src="img/weiter_w.svg" /></div>
+			
+			<!--Hotspots Gasthaus (1. Entscheidung)-->
+			<div id="clock" class="hs tooltip" title="Geld und Uhr stehlen"><img src="img/kasse_w.svg" /></div>
+			<div id="money" class="hs tooltip" title="Geld stehlen"><img src="img/geld_w.svg" /></div>
+			
+			<!--Hotspots Gericht (2. Entscheidung)-->
+			<div id="plea" class="hs tooltip" title="Um Gnade bitten"><img src="img/gnadenersuch_w.svg" /></div>
+			<div id="silence" class="hs tooltip" title="Schweigen"><img src="img/schweigen_w.svg" /></div>
+			
+			<!--Hotspots Gefängnis (3. Entscheidung)-->
+			<div id="fight" class="hs tooltip" title="Losreißen"><img src="img/wehren_w.svg" /></div>
+			<div id="resign" class="hs tooltip" title="Freiwillig die Zelle betreten"><img src="img/friedlich_w.svg" /></div>
+			
+			
+			<!--Spielstart-->
+			<div id="explain" class="hs">Baue so viele Zigarren wie du kannst. </br>
+			Du kämpfst dabei gegen die Zeit! </br>
+			Beeile dich um dein Soll zu schaffen.</div>
+			
+			<!--Klickspiel-->
+			<div id="paper" class="game">
+				<img src="img/spiel/papes.svg" id="paper1" class="game">
+				<div class="tabak-dropzone game" id="drop1"> </div>
+				<div class="tabak-dropzone game" id="drop2"> </div>
+				<div class="tabak-dropzone game" id="drop3"> </div>
+			</div>
+			<div class="tabak game">
+				<img src="img/spiel/tabak.svg" id="drag1" draggable="true" class="drag tabakhaufen">
+				<img src="img/spiel/tabak.svg" id="drag2" draggable="true" class="drag tabakhaufen">
+				<img src="img/spiel/tabak.svg" id="drag3" draggable="true" class="drag tabakhaufen">
+			</div>
+			
+			
+			<img src="img/spiel/zigarre.svg" id="zigarre" draggable="true" class="hs">
+			
+			<img src="img/spiel/kiste_leer.svg" id="kiste" class="game hs">
+			<!--Klickspiel Ende-->
+		
+
+			<video id="videoElement" width="1150px" height="auto">
+				<source src="video/00_intro.mp4">
+			</video>
+
+		</div>
+	<div id="container">
+		<div id="buttons">
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="stop"></button>
+			<button id="skip"></button>
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>

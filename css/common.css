@@ -1,0 +1,79 @@
+/*Allgemeines Design*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+	background-color: black;
+}
+
+#container {
+    text-align: center;
+}
+
+
+#videoArea {
+    /*padding-top: 15px;*/
+    position: relative;
+    width: 1150px;
+	height: auto;
+    margin: 0 auto 0 auto;
+	background-color: black;
+}
+
+/*Buttons*/
+
+#buttons {
+    padding: 10px 0 10px 0;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 1.25em;
+	height: 60px;
+	width: 60px;
+	opacity: 0.5;
+	transition-duration: 0.32s;
+}
+
+button:hover {
+	opacity: 1;
+	
+	
+}
+
+#play {
+	background-image: url(../img/play.svg);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-size: 56px;
+}
+
+#pause {
+	background-image: url(../img/pause.svg);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-size: 56px;	
+}
+
+#stop {
+	background-image: url(../img/stop.svg);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-size: 56px;
+}
+
+#skip {
+	background-image: url(../img/skip.svg);
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	background-size: 56px;
+}
